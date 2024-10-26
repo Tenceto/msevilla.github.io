@@ -110,7 +110,7 @@ p{
 
 #toTop:hover {
     background-color: #555;
-    cursor: pointer;
+    cursor: url("/assets/images/pointer.svg") 5 5, auto;;
 }
 footer{
     background-color: var(--atmosphere);
@@ -208,46 +208,6 @@ html, body{
 .fixed-width-wrapper figure img:hover{
     transform: scale(1.05);
 }
-.highlights i{
-    color: var(--jungle);
-}
-.highlights img{
-
-}
-.tab-link {
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: var(--jungle);
-    color: var(--grass);
-    border-width: 1px 1px 0 1px;
-    border-color: var(--jungle);
-    border-style: solid;
-    border-radius: 15px 15px 0 0;
-    box-shadow:  0 0 5px var(--jungle);
-    clip-path: inset(-10px -10px 0px -10px);
-    transition: background-color 0.3s;
-}
-.tab-panel {
-    padding: 20px;
-    border-width: 0 1px 1px 1px;
-    border-color: var(--jungle);
-    border-style: solid;
-    border-radius: 0 15px 15px 15px;
-    box-shadow:  0 0 10px var(--jungle);
-}
-.tab-link.active {
-    background: var(--clean-light);
-    color: var(--jungle);
-}
-.bg-transparent{
-    box-shadow: none;
-    border-radius: 0px 15px 15px 0;
-}
-.tab-content{
-    box-shadow:  0 0 10px var(--jungle);
-    background: var(--clean-light);
-    border-radius: 0 15px 15px 15px;
-}
 /*
 Menu
 */
@@ -330,7 +290,7 @@ Menu
     border-radius: 15px;
 }
 .full-screen .full-width-wrapper#awards i:hover{
-    cursor: pointer;
+    cursor: url("/assets/images/pointer.svg") 5 5, auto;
     background: var(--violets);
 }
 /*********
@@ -366,8 +326,10 @@ SPECIFIC THEME ELEMENTS
     display: none;
 }
 .accordion-short i{
-    cursor: pointer;
-    color: var(--twisted);
+    cursor: url("/assets/images/pointer.svg") 5 5, auto;
+}
+.accordion-short i:hover{
+    color: var(--atmosphere);
 }
 .accordion-short.expand{
     border-radius: 5px 5px 0 0;
