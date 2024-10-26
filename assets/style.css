@@ -16,7 +16,7 @@ GENERAL
     color: var(--baby-powder);
 }
 html > *{
-    cursor: url("/assets/images/cursor.svg") 5 5, auto;
+    cursor: url("/assets/images/cursor.svg") , auto;
 }
 a{
     color: var(--springwater);
@@ -24,7 +24,7 @@ a{
 }
 a:hover{
     color: var(--baby-powder);
-    cursor: url("/assets/images/pointer.svg") 5 5, auto;
+    cursor: url("/assets/images/pointer.svg") , auto;
 }
 html,body{
     overflow-x:hidden;
@@ -110,7 +110,7 @@ p{
 
 #toTop:hover {
     background-color: #555;
-    cursor: url("/assets/images/pointer.svg") 5 5, auto;;
+    cursor: url("/assets/images/pointer.svg"), auto;;
 }
 footer{
     background-color: var(--atmosphere);
@@ -290,7 +290,7 @@ Menu
     border-radius: 15px;
 }
 .full-screen .full-width-wrapper#awards i:hover{
-    cursor: url("/assets/images/pointer.svg") 5 5, auto;
+    cursor: url("/assets/images/pointer.svg") , auto;
     background: var(--violets);
 }
 /*********
@@ -326,7 +326,7 @@ SPECIFIC THEME ELEMENTS
     display: none;
 }
 .accordion-short i{
-    cursor: url("/assets/images/pointer.svg") 5 5, auto;
+    cursor: url("/assets/images/pointer.svg") , auto;
 }
 .accordion-short i:hover{
     color: var(--atmosphere);
