@@ -406,6 +406,9 @@ SPECIFIC THEME ELEMENTS
     .full-width-wrapper{
         padding: 20px;
     }
+    #education .row:first-child{
+        flex-direction: column-reverse;
+    }
     .menu-wrapper{
         position: relative;
         background: var(--dark);
