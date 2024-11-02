@@ -145,7 +145,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("/assets/images/bg_1.svg");
+    background-image: url("/tenceto.github.io/assets/images/bg_1.svg");
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -158,10 +158,10 @@ html, body{
     background: var(--dark-light);
     margin-bottom: 200px;
 }
-.full-width-wrapper#education{
+.full-width-wrapper#skills-experience{
     margin-bottom: 0;
 }
-.full-width-wrapper#work{
+.full-width-wrapper#education{
     background: var(--baby-powder-light);
     margin-bottom: 250px;
 }
@@ -347,7 +347,18 @@ SPECIFIC THEME ELEMENTS
 .fa-whatsapp:hover{
     color: #1a9300;
 }
-
+dt a{
+    color: var(--charcoal);
+}
+dt a:hover{
+    color: var(--charcoal-light);
+}
+.fixed-width-wrapper .qr-codes img{
+    max-width: 70%;
+}
+.fixed-width-wrapper .qr-codes a:hover img{
+    transform: scale(1.05);
+}
 
 /*MOBILE*/
 @media (max-width: 1275px) {
@@ -424,6 +435,9 @@ SPECIFIC THEME ELEMENTS
     }
     .fixed-width-wrapper figure img{
         width: 100%; height: 100%; object-fit: cover;
+    }
+    .fixed-width-wrapper .qr-codes img{
+        max-width: 40%; 
     }
 }
 @media (max-width: 575px) {
