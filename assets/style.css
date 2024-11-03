@@ -30,6 +30,7 @@ html,body{
     overflow-x:hidden;
     max-width: 100vw;
     scroll-behavior: smooth;
+    font-size: 1.05rem;
 
 }
 h3{
@@ -145,7 +146,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("/assets/images/bg_1.svg");
+    background-image: url("/tenceto.github.io/assets/images/bg_1.svg");
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
