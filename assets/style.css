@@ -113,7 +113,7 @@ p{
     cursor: url("/assets/images/pointer.svg"), auto;;
 }
 footer{
-    background-color: var(--atmosphere);
+    background-color: var(--springwater);
     color: #F2F0EF;
 }
 footer a{
@@ -145,7 +145,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("/assets/images/bg_1.svg");
+    background-image: url("/tenceto.github.io/assets/images/bg_1.svg");
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -211,12 +211,6 @@ html, body{
 /*
 Menu
 */
-.full-screen .menu-wrapper{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 .mega-menu a {
     height: 100%;
 }
@@ -225,119 +219,13 @@ Menu
     background: var(--springwater);
     color: var(--charcoal);
 }
-.full-screen .full-width-wrapper .content-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 100%;
-    align-items: center;
-    max-width: 1240px;
-    max-height: fit-content;
-    margin: 0 auto;
-}
-.full-screen .full-width-wrapper .content-wrapper .height-container{
-    display: flex;
-    background: var(--piggyLight);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 0 20px;
-    max-width: 1000px;
-}
 .full-screen .height-container,
 .full-screen .content-container{
     min-width: 100%;
 }
-/*SCROLL Y FULL WIDTH*/
-.full-screen .full-width-wrapper#awards > .content-wrapper{
-    min-height: 0 !important;
-}
-.full-screen .full-width-wrapper#awards .content-wrapper:first-child{
-    padding-top: 300px;
-    margin-bottom: -20px;
-}
-.full-screen .scroll-container{
-    display: block;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.full-screen .scroll-container .scroll-container-content{
-    flex-wrap: nowrap;
-}
-.full-screen .full-width-wrapper#awards .content-wrapper:first-child .height-container{
-    min-width: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    margin: 0;
-}
-.full-screen .full-width-wrapper#awards .height-container{
-    min-width: 50%;
-    padding-right: 20px;
-}
-.full-screen .full-width-wrapper#awards .content-wrapper{
-    flex-direction: row;
-    overflow-y: scroll;
-    max-width: 1280px;
-    flex: 1 1 auto;
-}
-.full-screen .full-width-wrapper#awards .content-container{
-    min-width: 50%
-}
-.full-screen .full-width-wrapper#awards i.fa-chevron-left,
-.full-screen .full-width-wrapper#awards i.fa-chevron-right{
-    padding: 20px;
-    background: var(--violets-light);
-    border-radius: 15px;
-}
-.full-screen .full-width-wrapper#awards i:hover{
-    cursor: url("/assets/images/pointer.svg") , auto;
-    background: var(--violets);
-}
 /*********
 SPECIFIC THEME ELEMENTS
 **********/
-.full-screen figure{
-    overflow: hidden;
-    border-radius: 5px;
-    /*max-width: fit-content;*/
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-.full-screen .height-container img{
-    width: 100%;
-}
-.accordion{
-    min-width: fit-content;
-    transition: width 0.3s ease;
-    background: var(--mint);
-}
-.accordion-short,
-.accordion-more-info{
-    background: var(--cupcake);
-    padding: 20px;
-}
-.accordion-short.minimize,
-.accordion-more-info.minimize{
-    border-radius: 5px;
-}
-.accordion-more-info.minimize{
-    display: none;
-}
-.accordion-short i{
-    cursor: url("/assets/images/pointer.svg") , auto;
-}
-.accordion-short i:hover{
-    color: var(--atmosphere);
-}
-.accordion-short.expand{
-    border-radius: 5px 5px 0 0;
-}
-.accordion-more-info.expand{
-    display: flex;
-    border-radius: 0 0 5px 5px;
-}
 .fa-envelope:hover{
     color:  #ea4336;
 }
@@ -348,10 +236,10 @@ SPECIFIC THEME ELEMENTS
     color: #1a9300;
 }
 dt a{
-    color: var(--charcoal);
+    color: var(--baby-powder);
 }
 dt a:hover{
-    color: var(--charcoal-light);
+    color: var(--baby-powder-light);
 }
 .fixed-width-wrapper .qr-codes img{
     max-width: 70%;
@@ -359,7 +247,54 @@ dt a:hover{
 .fixed-width-wrapper .qr-codes a:hover img{
     transform: scale(1.05);
 }
-
+.card{
+    background-color: var(--atmosphere);
+}
+.card h3{
+    color: var(--baby-powder);
+    border-bottom: 1px solid var(--federal);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.card ul{
+    margin: 0;
+    padding: 0;
+}
+.card ul li{
+    list-style-type: none;   
+}
+#skills-experience .col-lg-3 .card ul li::before,
+#skills-experience .col-lg-3 .card h3::before{
+    padding-right: 5px;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+}
+#skills-experience .col-lg-3 .card ul li::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+}
+#skills-experience .col-lg-3:nth-of-type(1) .card h3::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f19d";
+}
+#skills-experience .col-lg-3:nth-of-type(2) .card h3::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f121";
+}
+#skills-experience .col-lg-3:nth-of-type(3) .card h3::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\e4e5";
+}
+#skills-experience .col-lg-3:nth-of-type(4) .card h3::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1ab";
+}
+#skills-experience .experience-container{
+    overflow: hidden;
+}
+#skills-experience .experience-container .row.mb-2{
+    border-bottom: 1px solid var(--springwater);
+}
+#publications h2{
+    color: var(--baby-powder) !important;
+}
 /*MOBILE*/
 @media (max-width: 1275px) {
     .fixed-width-wrapper{
@@ -370,9 +305,6 @@ dt a:hover{
 @media (max-width: 1024px) {
     #toTop{
         right: 20px;
-    }
-    .mega-menu a{
-        padding: 20px 5px 10px 5px;
     }
 }
 @media (max-width: 768px) {
@@ -416,6 +348,9 @@ dt a:hover{
         text-decoration: none;
         padding: 5px 20px;
     }
+    .hamburger-menu a:active{
+        background: var(--springwater);
+    }
     .fa-solid.fa-bars{
         display: inline-block;
         position: relative;
@@ -428,6 +363,10 @@ dt a:hover{
         position: absolute;
         top: 7px;
         left: 4%
+    }
+    .fixed-width-wrapper,
+    .full-width-wrapper{
+        scroll-margin-top: 175px;
     }
     .fixed-width-wrapper figure{
         min-width: 100%;
